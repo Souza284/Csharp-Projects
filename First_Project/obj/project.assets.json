@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro\\Desktop\\Programação\\c#_vsc\\First_Project\\First_Project.csproj",
+      "projectUniqueName": "C:\\Users\\Pedro\\Documents\\MyProjects\\Csharp-Projects\\First_Project\\First_Project.csproj",
       "projectName": "First_Project",
-      "projectPath": "C:\\Users\\Pedro\\Desktop\\Programação\\c#_vsc\\First_Project\\First_Project.csproj",
+      "projectPath": "C:\\Users\\Pedro\\Documents\\MyProjects\\Csharp-Projects\\First_Project\\First_Project.csproj",
       "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro\\Desktop\\Programação\\c#_vsc\\First_Project\\obj\\",
+      "outputPath": "C:\\Users\\Pedro\\Documents\\MyProjects\\Csharp-Projects\\First_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",

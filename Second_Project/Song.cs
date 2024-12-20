@@ -2,9 +2,34 @@ namespace Second_Project
 {
     public class Song
     {
-        public string? name;
-        public string? artist;
-        public double time;
-        public bool avaiable;
+        public string? Name { get; set; }
+        public string? Artist { get; set; }
+        public double Duration { get; set; }
+        public bool Avaiable { get; set; }
+
+        public Song(string name, string artist, double duration, bool avaiable)
+        {
+            Name = name;
+            Artist = artist;
+            Duration = duration;
+            Avaiable = avaiable;
+        }
+
+
+        public void DisplayData()
+        {
+            Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Artist: " + Artist);
+            Console.WriteLine("Duration: " + Duration);
+
+            if (Avaiable)
+            {
+                Console.WriteLine("Avaiable in plan.");
+            }
+            else
+            {
+                Console.WriteLine("Purchase the plane Plus+");
+            }
+        }
     }
 }

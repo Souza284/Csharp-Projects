@@ -78,15 +78,13 @@ public class Program
             Bands.Add(nameBand, new List<double>());
 
             Console.ForegroundColor = ConsoleColor.Green;
-
+            Thread.Sleep(1000);
             Console.WriteLine("The band " + nameBand + " was successfuly registered!");
 
             Console.ForegroundColor = ConsoleColor.White;
-
-            Console.WriteLine("Type in anything to go back to the menu");
+            Console.WriteLine("Please type in anything to go back to the menu.");
 
             Console.ReadKey();
-            Thread.Sleep(1000);
             Console.Clear();
 
             Show_menu();
@@ -115,12 +113,9 @@ public class Program
                 Console.WriteLine("Band #" + (i + 1) + ": " + Bands.Keys.ElementAt(i));
             }
 
-            Console.WriteLine("Type in anything to go back to the menu");
+            Console.WriteLine("Please type in anything to go back to the menu.");
 
             Console.ReadKey();
-
-            Thread.Sleep(1000);
-
             Console.Clear();
 
             Show_menu();
@@ -139,7 +134,39 @@ public class Program
 
             if (!Bands.ContainsKey(reviewing))
             {
-                throw new Exception($"There is no {reviewing} in the list band...");
+                //throw new Exception($"There is no {reviewing} in the list of bands...");
+
+                Console.ForegroundColor = ConsoleColor.Red;
+
+                Console.WriteLine($"There is no {reviewing} in the list of bands...");
+
+                Console.ForegroundColor = ConsoleColor.White;
+
+                Console.WriteLine("Please type in anything to go back to the menu.");
+
+                Console.ReadKey();
+                Console.Clear();
+
+                Show_menu();
+            }
+            else
+            {
+                Console.Write("Please enter your review about the band " + reviewing + ": ");
+                var review = Convert.ToDouble(Console.ReadLine());
+                Bands[reviewing].Add(review);
+
+                Thread.Sleep(1000);
+                
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Your review was successfuly registered!");
+
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Please type in anything to go back to the menu.");
+
+                Console.ReadKey();
+                Console.Clear();
+
+                Show_menu();
             }
         }
     }

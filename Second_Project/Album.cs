@@ -5,6 +5,7 @@ namespace Second_Project
         private List<Song> songs = new List<Song>();
         public string? Name { get; set; }
         public int Duration => songs.Sum(song => song.Duration); //seconds
+        public int Year { get; set; }
 
         public void AddSong(Song song)
         {
@@ -13,7 +14,7 @@ namespace Second_Project
 
         public void ShowAlbum()
         {
-            Console.WriteLine(Name);
+            Console.WriteLine(Name + " " + Year);
             Console.WriteLine(songs.Count + " songs, " + Duration + " seconds");
             Console.WriteLine("");
 

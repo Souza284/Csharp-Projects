@@ -1,20 +1,17 @@
 ﻿using Second_Project;
 
-Album michaeljacksonAlbum = new Album();
-michaeljacksonAlbum.Name = "Thriller";
+Band band1 = new Band();
+band1.Name = "Michael Jackson";
 
-Song song1 = new Song();
-song1.Name = "Thriller";
-song1.Duration = 357;
+Album band1Album = new Album();
+band1Album.Name = "Thriller";
+band1Album.Year = 1982;
 
-Song song2 = new Song();
-song2.Name = "Beat It";
-song2.Duration = 248;
+Song song1 = new("Thriller", band1, 357, new Genre {MusicGenre = "Pop"}, true);
 
-michaeljacksonAlbum.AddSong(song1);
-michaeljacksonAlbum.AddSong(song2);
+band1Album.AddSong(song1);
+//band1Album.AddSong(song2);
 
-Band michaelJackson = new Band();
-michaelJackson.AddAlbum(michaeljacksonAlbum);
-
-michaelJackson.ViewDiscography();
+band1.AddAlbum(band1Album);
+band1.ViewDiscography();
+song1.DisplayData();

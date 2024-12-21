@@ -6,6 +6,7 @@ namespace Second_Project
         public string? Artist { get; set; }
         public int Duration { get; set; } //seconds
         public bool Avaiable { get; set; }
+        public Genre? Genre { get; set; }
 
         /*public Song(string name, string artist, double duration, bool avaiable)
         {

@@ -1,17 +1,38 @@
 ﻿using Second_Project;
 
-Band band1 = new Band();
-band1.Name = "Michael Jackson";
+// Music
 
-Album band1Album = new Album();
-band1Album.Name = "Thriller";
-band1Album.Year = 1982;
+Band band1 = new("Michael Jackson");
 
-Song song1 = new("Thriller", band1, 357, new Genre {MusicGenre = "Pop"}, true);
+Album band1Album = new("Thriller", 1982);
+
+Song song1 = new("Thriller", band1, 357, new Genre { MusicGenre = "Pop" }, true);
 
 band1Album.AddSong(song1);
-//band1Album.AddSong(song2);
 
 band1.AddAlbum(band1Album);
-band1.ViewDiscography();
-song1.DisplayData();
+
+//Podcast
+
+Episode episode1 = new("Astronomy with Dr. Smith", 1, 84);
+episode1.AddGuest("Dr. Smith");
+
+Podcast podcast1 = new("Igor3K", "Flow Podcast");
+podcast1.AddEpisode(episode1);
+
+
+Console.WriteLine("Type in 1 to go to music.");
+Console.WriteLine("Type in 2 to go to podcasts.");
+var option = Convert.ToInt32(Console.ReadLine());
+
+if (option == 1)
+{
+    band1.ViewDiscography();
+    band1Album.ShowAlbum();
+    song1.DisplayData();
+}
+else
+{
+    podcast1.DisplayData();
+    episode1.DisplayData();
+}

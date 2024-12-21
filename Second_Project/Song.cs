@@ -21,6 +21,7 @@ namespace Second_Project
         public void DisplayData()
         {
             Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Genre: " + Genre!.MusicGenre);
             Console.WriteLine("Artist: " + Artist!.Name);
             Console.WriteLine("Duration: " + Duration);
 

@@ -7,6 +7,12 @@ namespace Second_Project
         public int Duration => songs.Sum(song => song.Duration); //seconds
         public int Year { get; set; }
 
+        public Album(string? name, int year)
+        {
+            Name = name;
+            Year = year;
+        }
+
         public void AddSong(Song song)
         {
             songs.Add(song);

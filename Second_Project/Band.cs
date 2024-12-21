@@ -5,6 +5,11 @@ namespace Second_Project
         private List<Album> albumList = new List<Album>();
         public string? Name { get; set; }
 
+        public Band(string? name)
+        {
+            Name = name;
+        }
+
         public void AddAlbum(Album album)
         {
             albumList.Add(album);

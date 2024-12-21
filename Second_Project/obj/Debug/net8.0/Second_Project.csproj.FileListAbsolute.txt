@@ -1,0 +1,15 @@
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\bin\Debug\net8.0\Second_Project.exe
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\bin\Debug\net8.0\Second_Project.deps.json
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\bin\Debug\net8.0\Second_Project.runtimeconfig.json
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\bin\Debug\net8.0\Second_Project.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\bin\Debug\net8.0\Second_Project.pdb
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\Second_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\Second_Project.AssemblyInfoInputs.cache
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\Second_Project.AssemblyInfo.cs
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\Second_Project.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\Second_Project.sourcelink.json
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\Second_Project.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\refint\Second_Project.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\Second_Project.pdb
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\Second_Project.genruntimeconfig.cache
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Second_Project\obj\Debug\net8.0\ref\Second_Project.dll

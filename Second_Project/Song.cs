@@ -4,16 +4,16 @@ namespace Second_Project
     {
         public string? Name { get; set; }
         public string? Artist { get; set; }
-        public double Duration { get; set; }
+        public int Duration { get; set; } //seconds
         public bool Avaiable { get; set; }
 
-        public Song(string name, string artist, double duration, bool avaiable)
+        /*public Song(string name, string artist, double duration, bool avaiable)
         {
             Name = name;
             Artist = artist;
             Duration = duration;
             Avaiable = avaiable;
-        }
+        }*/
 
 
         public void DisplayData()

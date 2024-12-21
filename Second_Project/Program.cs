@@ -14,4 +14,7 @@ song2.Duration = 248;
 michaeljacksonAlbum.AddSong(song1);
 michaeljacksonAlbum.AddSong(song2);
 
-michaeljacksonAlbum.ShowAlbum();
+Band michaelJackson = new Band();
+michaelJackson.AddAlbum(michaeljacksonAlbum);
+
+michaelJackson.ViewDiscography();

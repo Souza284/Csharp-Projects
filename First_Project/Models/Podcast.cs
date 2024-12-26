@@ -1,4 +1,4 @@
-namespace Second_Project
+namespace First_Project.Models
 {
     public class Podcast
     {

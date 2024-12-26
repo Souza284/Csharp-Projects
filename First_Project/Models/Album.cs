@@ -1,6 +1,6 @@
 namespace First_Project.Models
 {
-    public class Album
+    internal class Album
     {
         private List<Song> songs = new List<Song>();
         public string? Name { get; set; }

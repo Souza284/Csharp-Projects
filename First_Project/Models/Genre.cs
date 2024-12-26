@@ -1,6 +1,6 @@
 namespace First_Project.Models
 {
-    public class Genre
+    internal class Genre
     {
         public string? MusicGenre {get; set;}
     }

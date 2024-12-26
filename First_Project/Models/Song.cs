@@ -1,6 +1,6 @@
 namespace First_Project.Models
 {
-    public class Song
+    internal class Song
     {
         public string? Name { get; set; }
         public Band? Artist { get; }

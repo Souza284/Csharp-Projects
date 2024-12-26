@@ -1,6 +1,6 @@
 namespace First_Project.Models
 {
-    public class Podcast
+    internal class Podcast
     {
         public string? Host { get; set; }
         public string? Name { get; set; }

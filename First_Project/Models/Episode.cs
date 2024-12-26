@@ -1,6 +1,6 @@
 namespace First_Project.Models
 {
-    public class Episode
+    internal class Episode
     {
         public string? Title { get; set; }
         public int Number { get; set; }

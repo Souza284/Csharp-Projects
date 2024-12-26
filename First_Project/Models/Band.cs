@@ -1,6 +1,6 @@
 namespace First_Project.Models
 {
-    public class Band
+    internal class Band
     {
         private List<Album> albumList = new List<Album>();
         private List<double> rate = new List<double>();

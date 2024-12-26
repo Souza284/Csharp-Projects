@@ -163,8 +163,8 @@ void ReviewBand()//option 3: Rate a band
     {
         Band band = Bands[bandReviewing];
         Console.Write("Please enter your review about the band " + bandReviewing + ": ");
-        var review = Convert.ToDouble(Console.ReadLine());
-        band.AddRate(review);
+        var review = Convert.ToInt32(Console.ReadLine());
+        band.AddRate(new Review(review));
 
         Thread.Sleep(1000);
 

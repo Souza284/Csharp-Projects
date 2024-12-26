@@ -3,11 +3,17 @@ namespace First_Project.Models
     public class Band
     {
         private List<Album> albumList = new List<Album>();
+        private List<double> rate = new List<double>();
+        public double Average => rate.Average();
         public string? Name { get; set; }
 
         public Band(string? name)
         {
             Name = name;
+        }
+        public void AddRate(double review)
+        {
+            rate.Add(review);
         }
 
         public void AddAlbum(Album album)

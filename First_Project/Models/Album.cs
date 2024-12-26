@@ -5,12 +5,12 @@ namespace First_Project.Models
         private List<Song> songs = new List<Song>();
         public string? Name { get; set; }
         public int Duration => songs.Sum(song => song.Duration); //seconds
-        public int Year { get; set; }
+        //public int Year { get; set; }
 
-        public Album(string? name, int year)
+        public Album(string? name)
         {
             Name = name;
-            Year = year;
+            //Year = year;
         }
 
         public void AddSong(Song song)
@@ -20,7 +20,7 @@ namespace First_Project.Models
 
         public void ShowAlbum()
         {
-            Console.WriteLine(Name + " " + Year);
+            Console.WriteLine(Name);
             Console.WriteLine(songs.Count + " songs, " + Duration + " seconds");
             Console.WriteLine("");
 

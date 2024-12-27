@@ -1,11 +1,26 @@
 namespace First_Project.Models
 {
-    internal class Album
+    internal class Album: IReview
     {
         private List<Song> songs = new List<Song>();
+        private List<Review> rate = new List<Review>();
         public string? Name { get; set; }
         public int Duration => songs.Sum(song => song.Duration); //seconds
-        //public int Year { get; set; }
+
+        public double Average
+        {
+            get
+            {
+                if (rate.Count == 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return rate.Average(a => a.Rate);
+                }
+            }
+        }
 
         public Album(string? name)
         {
@@ -29,6 +44,11 @@ namespace First_Project.Models
                 Console.WriteLine("Song #" + (i + 1) + ": " + songs[i].Name);
             }
 
+        }
+
+        public void Rate(Review review)
+        {
+            rate.Add(review);
         }
     }
 }

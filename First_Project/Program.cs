@@ -6,10 +6,11 @@ Dictionary<string, Band> Bands = new();
 Dictionary<int, Menu> menus = new();
 
 menus.Add(1, new MenuRegisterBand());
-menus.Add(2, new MenuShowList());
-menus.Add(3, new MenuReviewBand());
-menus.Add(4, new MenuDisplayData());
-menus.Add(5, new MenuRegisterAlbum());
+menus.Add(2, new MenuReviewBand());
+menus.Add(3, new MenuShowList());
+menus.Add(4, new MenuRegisterAlbum());
+menus.Add(5, new MenuReviewAlbum());
+menus.Add(6, new MenuDisplayData());
 menus.Add(0, new MenuExit());
 
 

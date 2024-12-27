@@ -24,7 +24,7 @@ namespace First_Project.Menus
                 Console.WriteLine("Band #" + (i + 1) + ": " + Bands.Keys.ElementAt(i));
             }
 
-            Console.WriteLine("What band do you want to see the average rating? ");
+            Console.WriteLine("What band do you want to see the discography? ");
             var bandAverage = Console.ReadLine()!;// band name you wanna see the average
 
             if (!Bands.ContainsKey(bandAverage))
@@ -46,6 +46,11 @@ namespace First_Project.Menus
             {
                 Band ratingList = Bands[bandAverage];
                 Console.WriteLine($"The band {bandAverage} average rating is {ratingList.Average}");
+
+                foreach (var album in ratingList.albumList)
+                {
+                    Console.WriteLine(album.Name + "" + album.Average);
+                }
 
                 Console.WriteLine("Please type in anything to go back to the menu.");
 

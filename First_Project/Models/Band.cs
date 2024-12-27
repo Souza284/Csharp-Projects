@@ -1,8 +1,8 @@
 namespace First_Project.Models
 {
-    internal class Band
+    internal class Band: IReview
     {
-        private List<Album> albumList = new List<Album>();
+        public List<Album> albumList = new List<Album>();
         private List<Review> rate = new List<Review>();
         public double Average
         {
@@ -40,6 +40,11 @@ namespace First_Project.Models
             {
                 Console.WriteLine("Album #" + (i + 1) + ": " + albumList[i].Name);
             }
+        }
+
+        public void Rate(Review review)
+        {
+            rate.Add(review);
         }
     }
 }

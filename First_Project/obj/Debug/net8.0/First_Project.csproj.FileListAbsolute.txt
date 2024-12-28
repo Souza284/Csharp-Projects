@@ -27,3 +27,8 @@ C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\First_Project\obj\Debug\net8
 C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\First_Project\obj\Debug\net8.0\First_Project.pdb
 C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\First_Project\obj\Debug\net8.0\First_Project.genruntimeconfig.cache
 C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\First_Project\obj\Debug\net8.0\ref\First_Project.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\First_Project\bin\Debug\net8.0\OpenAI.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\First_Project\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\First_Project\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\First_Project\obj\Debug\net8.0\First_Project.csproj.AssemblyReference.cache
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\First_Project\obj\Debug\net8.0\First_Pr.293A391E.Up2Date

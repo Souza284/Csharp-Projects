@@ -14,7 +14,7 @@ void PetShop()
 
     Console.WriteLine("\nWelcome to the Petshop pop!");
 
-    Console.WriteLine("Please type in 1 to register a pet \nPlease type in 2 to adopt a pet ");
+    Console.WriteLine("Please type in 1 to register a pet \nPlease type in 2 to adopt a pet \nPlease enter -1 to exit ");
     var option = Int32.Parse(Console.ReadLine()!);
 
     if (options.ContainsKey(option))

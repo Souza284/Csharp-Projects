@@ -33,10 +33,11 @@ void Show_menu()//show menu
 
     Console.WriteLine("\nWelcome to Screen Sound!");
     Console.WriteLine("Type 1 to register a band ");
-    Console.WriteLine("Type 2 to show all the bands ");
-    Console.WriteLine("Type 3 to evaluate a band ");
-    Console.WriteLine("Type 4 to show the band rating ");
-    Console.WriteLine("Type 5 to register an album of a band ");
+    Console.WriteLine("Type 2 to evaluate a band ");
+    Console.WriteLine("Type 3 to show all the bands ");
+    Console.WriteLine("Type 4 to register an album of a band ");
+    Console.WriteLine("Type 5 to evaluate an album ");
+    Console.WriteLine("Type 6 to display the band data ");
     Console.WriteLine("Type 0 to exit \n");
 
     Console.Write("Option: ");

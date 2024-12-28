@@ -55,6 +55,17 @@ namespace First_Project.Menus
                     Console.WriteLine("Please enter in your review: ");
                     Review review = Review.Convert(Console.ReadLine()!);
                     album.Rate(review);
+
+                    Thread.Sleep(1000);
+
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Your review was successfuly registered!");
+
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("Please type in anything to go back to the menu.");
+
+                    Console.ReadKey();
+                    Console.Clear();
                 }
                 else
                 {
@@ -69,17 +80,6 @@ namespace First_Project.Menus
                     Console.ReadKey();
                     Console.Clear();
                 }
-
-                Thread.Sleep(1000);
-
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Your review was successfuly registered!");
-
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("Please type in anything to go back to the menu.");
-
-                Console.ReadKey();
-                Console.Clear();
             }
         }
     }

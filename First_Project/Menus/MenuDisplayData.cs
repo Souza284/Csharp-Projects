@@ -45,11 +45,11 @@ namespace First_Project.Menus
             else
             {
                 Band ratingList = Bands[bandAverage];
-                Console.WriteLine($"The band {bandAverage} average rating is {ratingList.Average}");
+                Console.WriteLine($"The band {bandAverage} average rating is {ratingList.Average:.2f}");
 
                 foreach (var album in ratingList.albumList)
                 {
-                    Console.WriteLine(album.Name + "" + album.Average);
+                    Console.WriteLine(album.Name + " - " + album.Average);
                 }
 
                 Console.WriteLine("Please type in anything to go back to the menu.");

@@ -24,6 +24,6 @@ void PetShop()
     }
     else
     {
-        throw new ArithmeticException("Oh no... No valid option");
+        throw new ArithmeticException("No valid option...");
     }
 }

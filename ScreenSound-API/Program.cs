@@ -19,13 +19,15 @@ using (HttpClient client = new HttpClient())
         //var artist = Console.ReadLine()!;
         //LinqFilter.FilterSongsByArtist(songs, artist);
 
-        var favoriteSongs = new FavoriteSongs("Pedro");
+        /*var favoriteSongs = new FavoriteSongs("Pedro");
         favoriteSongs.AddFavoriteSongs(songs[1]);
         favoriteSongs.AddFavoriteSongs(songs[2]);
         favoriteSongs.AddFavoriteSongs(songs[3]);
 
         favoriteSongs.DisplayFavoriteSongs();
-        favoriteSongs.GenerateJsonFile();
+        favoriteSongs.GenerateJsonFile();*/
+        LinqFilter.FilterSongsByKey1(songs);
+
     }
     catch (Exception e)
     {

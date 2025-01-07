@@ -33,5 +33,16 @@ namespace ScreenSound_API.Filters
                 Console.WriteLine(" - " + song);
             }
         }
+        public static void FilterSongsByKey1(List<Song> songs)
+        {
+            var songsByKey1 = songs.Where(s => s.Key == 1).Select(s => s.Name);
+            
+            Console.WriteLine("Songs in C#");
+
+            foreach(var song in songsByKey1)
+            {
+                Console.WriteLine(" - " + song);
+            }
+        }
     }
 }

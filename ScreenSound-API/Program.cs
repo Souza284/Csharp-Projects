@@ -15,9 +15,17 @@ using (HttpClient client = new HttpClient())
         /*Console.WriteLine("Genre: ");
         var genre = Console.ReadLine()!;
         LinqFilter.FilterArtistsByGender(songs, genre);*/
-        Console.WriteLine("Artist: ");
-        var artist = Console.ReadLine()!;
-        LinqFilter.FilterSongsByArtist(songs, artist);
+        //Console.WriteLine("Artist: ");
+        //var artist = Console.ReadLine()!;
+        //LinqFilter.FilterSongsByArtist(songs, artist);
+
+        var favoriteSongs = new FavoriteSongs("Pedro");
+        favoriteSongs.AddFavoriteSongs(songs[1]);
+        favoriteSongs.AddFavoriteSongs(songs[2]);
+        favoriteSongs.AddFavoriteSongs(songs[3]);
+
+        favoriteSongs.DisplayFavoriteSongs();
+        favoriteSongs.GenerateJsonFile();
     }
     catch (Exception e)
     {

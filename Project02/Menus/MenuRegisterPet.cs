@@ -2,13 +2,11 @@ using Project02.Models;
 
 namespace Project02.Menus
 {
-    internal class MenuRegisterPet: MenuMain
+    internal class MenuRegisterPet : MenuMain
     {
-        public override void Execute()
+        public override void Execute(Dictionary<int, Pet> Pets)
         {
-            base.Execute();
-
-            Pet pet = new();
+            base.Execute(Pets);
 
             Console.WriteLine("Register Pet\n");
 
@@ -18,10 +16,10 @@ namespace Project02.Menus
             switch (option)
             {
                 case 1:
-                {
-                    pet.RegisterPet("Dog");
-                    break;
-                }
+                    {
+                        Pets[1].RegisterPet();
+                        break;
+                    }
             }
         }
     }

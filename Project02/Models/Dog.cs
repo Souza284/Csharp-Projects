@@ -7,6 +7,8 @@ namespace Project02.Models
         public int Age { get;}
         //private Dictionary<Dog, string> Dogs = new();
 
+        public Dog(){}
+
         public Dog(string name, string race, int age)
         {
             Name = name;
@@ -14,9 +16,9 @@ namespace Project02.Models
             Age = age;
         }
 
-        public override void RegisterPet(string type)
+        public override void RegisterPet()
         {
-            base.RegisterPet(type);
+            base.RegisterPet();
             Console.WriteLine("Dog Register\n");
 
             Console.WriteLine("Race: ");
@@ -37,10 +39,11 @@ namespace Project02.Models
 
             Console.WriteLine("Dog successfuly registered!");
 
-            Console.ReadKey();
-
             Pet.GeneratePetJsonFile();
 
+            Console.ReadKey();
+
+            Console.Clear();
         }
 
         public void Action()

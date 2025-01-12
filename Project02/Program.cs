@@ -1,12 +1,20 @@
 ﻿//Petshop
 
 using Project02.Menus;
+using Project02.Models;
 
 var options = new Dictionary<int, MenuMain>
 {
     { 1, new MenuRegisterPet() },
     { 2, new MenuAdoptPet() }
 };
+
+var Pets = new Dictionary<int, Pet>
+{
+    {1, new Dog()},
+    {2, new Cat()}
+};
+
 
 PetShop();
 void PetShop()
@@ -21,7 +29,8 @@ void PetShop()
     if (options.ContainsKey(option))
     {
         MenuMain menu = options[option];
-        menu.Execute();
+        menu.Execute(Pets);
+        PetShop();
     }
     else
     {

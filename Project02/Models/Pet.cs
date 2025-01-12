@@ -7,7 +7,7 @@ namespace Project02.Models
     {
         public string? Type {get; set;}
         private static List<Pet> PetList = new(); 
-        public virtual void RegisterPet(string type)
+        public virtual void RegisterPet()
         {
             Console.Clear();
         }
@@ -25,6 +25,11 @@ namespace Project02.Models
             File.WriteAllText(fileName, json);
 
             //Console.WriteLine(fileName + ": " + Path.GetFullPath(fileName));
+        }
+
+        public static void ClearPetJsonFile()
+        {
+            //File.Delete(fileName, json)
         }
     }
 

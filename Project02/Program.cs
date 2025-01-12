@@ -2,10 +2,11 @@
 
 using Project02.Menus;
 
-var options = new Dictionary<int, MenuMain>();
-
-options.Add(1, new MenuRegisterPet());
-options.Add(2, new MenuAdoptPet());
+var options = new Dictionary<int, MenuMain>
+{
+    { 1, new MenuRegisterPet() },
+    { 2, new MenuAdoptPet() }
+};
 
 PetShop();
 void PetShop()

@@ -20,6 +20,11 @@ namespace Project02.Menus
                         Pets[1].RegisterPet();
                         break;
                     }
+                case 2:
+                    {
+                        Pets[2].RegisterPet();
+                        break;
+                    }
             }
         }
     }

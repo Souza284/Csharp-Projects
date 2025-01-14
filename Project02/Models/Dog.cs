@@ -1,8 +1,8 @@
 namespace Project02.Models
 {
-    internal class Dog: Pet, IPet
+    internal class Dog : Pet, IPet
     {
-        public Dog(){}
+        public Dog() { }
 
         public Dog(string name, string race, int age)
         {

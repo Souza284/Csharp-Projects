@@ -5,6 +5,7 @@ using Project02.Models;
 
 var options = new Dictionary<int, MenuMain>
 {
+    {-1, new ExitMenu()},
     { 1, new MenuRegisterPet() },
     { 2, new MenuAdoptPet() }
 };
@@ -29,7 +30,11 @@ void PetShop()
     {
         MenuMain menu = options[option];
         menu.Execute(Pets);
-        PetShop();
+
+        if (option != -1)
+        {
+            PetShop();
+        }
     }
     else
     {

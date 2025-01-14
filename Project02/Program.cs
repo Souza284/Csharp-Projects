@@ -15,7 +15,6 @@ var Pets = new Dictionary<int, Pet>
     {2, new Cat()}
 };
 
-
 PetShop();
 void PetShop()
 {

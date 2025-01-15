@@ -1,4 +1,7 @@
-﻿var fileAddress = "Accounts.txt";
+﻿using System.Text;
+using System.Text.Unicode;
+
+var fileAddress = "Accounts.txt";
 
 var byteNumber = -1;
 
@@ -18,9 +21,14 @@ while (byteNumber != 0)
 
 static void WriteBuffer(byte[] buffer)
 {
-    foreach (byte _byte in buffer)
+    var utf8 = new UTF8Encoding();
+
+    var text = utf8.GetString(buffer);
+    Console.Write(text);
+
+    /*foreach (byte _byte in buffer)
     {
         Console.Write(_byte);
         Console.Write(" ");
-    }
+    }*/
 }

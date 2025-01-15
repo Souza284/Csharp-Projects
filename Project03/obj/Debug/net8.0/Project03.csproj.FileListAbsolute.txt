@@ -1,0 +1,15 @@
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\bin\Debug\net8.0\Project03.exe
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\bin\Debug\net8.0\Project03.deps.json
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\bin\Debug\net8.0\Project03.runtimeconfig.json
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\bin\Debug\net8.0\Project03.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\bin\Debug\net8.0\Project03.pdb
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\Project03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\Project03.AssemblyInfoInputs.cache
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\Project03.AssemblyInfo.cs
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\Project03.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\Project03.sourcelink.json
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\Project03.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\refint\Project03.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\Project03.pdb
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\Project03.genruntimeconfig.cache
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project03\obj\Debug\net8.0\ref\Project03.dll

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro\\Documents\\MyProjects\\Csharp-Projects\\ScreenSound-API\\ScreenSound-API.csproj",
+      "projectUniqueName": "c:\\Users\\Pedro\\Documents\\MyProjects\\Csharp-Projects\\ScreenSound-API\\ScreenSound-API.csproj",
       "projectName": "ScreenSound-API",
-      "projectPath": "C:\\Users\\Pedro\\Documents\\MyProjects\\Csharp-Projects\\ScreenSound-API\\ScreenSound-API.csproj",
+      "projectPath": "c:\\Users\\Pedro\\Documents\\MyProjects\\Csharp-Projects\\ScreenSound-API\\ScreenSound-API.csproj",
       "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro\\Documents\\MyProjects\\Csharp-Projects\\ScreenSound-API\\obj\\",
+      "outputPath": "c:\\Users\\Pedro\\Documents\\MyProjects\\Csharp-Projects\\ScreenSound-API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

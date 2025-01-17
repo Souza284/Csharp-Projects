@@ -9,7 +9,7 @@ namespace Project02.Models
         public string? Name { get; set; }
         public string? Race { get; set; }
         public int Age { get; set; }
-        private static List<Pet> PetList = new();
+        public static List<Pet> PetList = new();
         public virtual void RegisterPet()
         {
             Console.Clear();
@@ -34,6 +34,6 @@ namespace Project02.Models
         {
             //File.Delete(fileName, json)
         }
-    }
 
+    }
 }

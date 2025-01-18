@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Project02.Filters;
 using Project02.Models;
 
 namespace Project02.Models
@@ -33,6 +34,11 @@ namespace Project02.Models
         public static void ClearPetJsonFile()
         {
             //File.Delete(fileName, json)
+        }
+
+        public virtual void DisplayCatList(List<Pet> pets)
+        {
+            Console.Clear();
         }
 
     }

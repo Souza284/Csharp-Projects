@@ -24,7 +24,7 @@ namespace Project02.Menus
             {
                 case 2:
                     {
-                        LinqFilter.DisplayCatList(Pet.PetList);
+                        Pets[2].DisplayCatList(Pet.PetList);
                         break;
                     }
             }

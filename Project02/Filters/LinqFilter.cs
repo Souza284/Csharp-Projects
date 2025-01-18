@@ -3,11 +3,11 @@ using Project02.Models;
 
 namespace Project02.Filters
 {
-    internal class LinqFilter
+    internal class LinqFilter: Pet
     {
-        private static IEnumerable<Pet>? CatList {get; set;}
+        //private static List<Cat>? CatList = new();
 
-        public static void DisplayCatList(List<Pet> pets)
+        public virtual void DisplayCatList(List<Pet> pets)
         {
             var catList = pets.Where(p => p.Type!.Equals("Cat")).Select(p => p);
 

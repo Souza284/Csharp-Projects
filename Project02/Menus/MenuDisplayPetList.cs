@@ -22,11 +22,21 @@ namespace Project02.Menus
 
             switch (option)
             {
-                case 2:
+                case 1:
                     {
-                        Pets[2].DisplayCatList(Pet.PetList);
+                        Pets[1].DisplayPetList(Pet.PetList, option);
                         break;
                     }
+                case 2:
+                    {
+                        Pets[2].DisplayPetList(Pet.PetList, option);
+                        break;
+                    }
+                case 3:
+                {
+                    Pets[3].DisplayPetList(Pet.PetList, option);
+                    break;
+                }
             }
         }
     }

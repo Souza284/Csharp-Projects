@@ -34,17 +34,22 @@ namespace Project02.Menus
                     }
                 case 3:
                     {
-                        foreach (var pet in Pet.PetList)
-                        {
-                            Console.WriteLine(pet.Name);
-                        }
-
-                        Console.ReadKey();
-                        
-                        Console.Clear();
+                        DisplayGeneralList();
                         break;
                     }
             }
+        }
+
+        void DisplayGeneralList()
+        {
+            foreach (var pet in Pet.PetList)
+            {
+                Console.WriteLine(pet.Name);
+            }
+
+            Console.ReadKey();
+
+            Console.Clear();
         }
     }
 }

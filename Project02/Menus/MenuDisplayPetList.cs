@@ -24,19 +24,19 @@ namespace Project02.Menus
             {
                 case 1:
                     {
-                        Pets[1].DisplayPetList(Pet.PetList, option);
+                        Pets[1].DisplayPetList(option, Pet.PetList);
                         break;
                     }
                 case 2:
                     {
-                        Pets[2].DisplayPetList(Pet.PetList, option);
+                        Pets[2].DisplayPetList(option, Pet.PetList);
                         break;
                     }
                 case 3:
-                {
-                    Pets[3].DisplayPetList(Pet.PetList, option);
-                    break;
-                }
+                    {
+                        //Pets[3].GeneratePetList(option);
+                        break;
+                    }
             }
         }
     }

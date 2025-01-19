@@ -36,7 +36,7 @@ namespace Project02.Models
             //File.Delete(fileName, json)
         }
 
-        public virtual void DisplayPetList(List<Pet> pets, int option)
+        public virtual void DisplayPetList(int option, List<Pet> pets)
         {
             Console.Clear();
         }

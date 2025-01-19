@@ -4,6 +4,7 @@ namespace Project02.Models
 {
     internal class Cat : Pet
     {
+        public IEnumerable<Pet>? CatList { get; set; }
         public Cat() { }
         public Cat(string name, string race, int age)
         {
@@ -40,6 +41,19 @@ namespace Project02.Models
             Console.ReadKey();
 
             Console.Clear();
+        }
+
+        public override void DisplayPetList(int option, List<Pet> pets)
+        {
+            base.DisplayPetList(option, PetList);
+
+            CatList = PetList.Where(p => p.Type!.Equals("Cat")).Select(p => p).ToList();
+
+            foreach (var cat in CatList)
+            {
+                Console.WriteLine(cat.Name);
+            }
+
         }
 
         public void Action()

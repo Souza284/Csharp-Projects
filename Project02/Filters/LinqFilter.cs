@@ -5,18 +5,19 @@ namespace Project02.Filters
 {
     internal class LinqFilter : Pet
     {
-        public override void DisplayPetList(List<Pet> pets, int option)
+
+        public static IEnumerable<Pet>? CatList {get; set;}
+        public static IEnumerable<Pet>? DogList { get; set; }
+        public static void DisplayPetList(List<Pet> pets, int option)
         {
-            base.DisplayPetList(pets, option);
-            
-            var catList = pets.Where(p => p.Type!.Equals("Cat")).Select(p => p);
-            var dogList = pets.Where(p => p.Type!.Equals("Dog")).Select(p => p);
+            CatList = pets.Where(p => p.Type!.Equals("Cat")).Select(p => p).ToList();
+            DogList = pets.Where(p => p.Type!.Equals("Dog")).Select(p => p).ToList();
 
             switch (option)
             {
                 case 1:
                     {
-                        foreach (var dog in dogList)
+                        foreach (var dog in DogList)
                         {
                             Console.WriteLine(dog.Name);
                         }
@@ -24,7 +25,7 @@ namespace Project02.Filters
                     }
                 case 2:
                     {
-                        foreach (var cat in catList)
+                        foreach (var cat in CatList)
                         {
                             Console.WriteLine(cat.Name);
                         }

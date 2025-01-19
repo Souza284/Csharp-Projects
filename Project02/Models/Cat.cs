@@ -47,9 +47,10 @@ namespace Project02.Models
         {
             base.DisplayPetList(option, PetList);
 
-            CatList = PetList.Where(p => p.Type!.Equals("Cat")).Select(p => p).ToList();
+            //CatList = PetList.Where(p => p.Type!.Equals("Cat")).Select(p => p).ToList();
+            var catList = PetList.Where(p => p.Type!.Equals("Cat")).Select(p => p).ToList();
 
-            foreach (var cat in CatList)
+            foreach (var cat in catList)
             {
                 Console.WriteLine(cat.Name);
             }

@@ -34,7 +34,14 @@ namespace Project02.Menus
                     }
                 case 3:
                     {
-                        //Pets[3].GeneratePetList(option);
+                        foreach (var pet in Pet.PetList)
+                        {
+                            Console.WriteLine(pet.Name);
+                        }
+
+                        Console.ReadKey();
+                        
+                        Console.Clear();
                         break;
                     }
             }

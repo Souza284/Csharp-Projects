@@ -1,3 +1,4 @@
+
 namespace Project02.Models
 {
     internal class Dog : Pet, IPet
@@ -34,7 +35,22 @@ namespace Project02.Models
 
             Console.WriteLine("Dog successfuly registered!");
 
+            Console.ReadKey();
+
+            Console.Clear();
+        }
+
+        public override void DisplayPetList(int option, List<Pet> pets)
+        {
+            base.DisplayPetList(option, pets);
+
             Pet.GeneratePetJsonFile();
+            var dogList = pets.Where(p => p.Type!.Equals("Dog")).Select(p => p.Name).ToList();
+
+            foreach (var dog in dogList)
+            {
+                Console.WriteLine(dog);
+            }
 
             Console.ReadKey();
 

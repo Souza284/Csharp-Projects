@@ -16,8 +16,7 @@ var options = new Dictionary<int, MenuMain>
 var Pets = new Dictionary<int, Pet>
 {
     { 1, new Dog() },
-    { 2, new Cat() },
-    { 3, new Pet() }
+    { 2, new Cat() }
 };
 
 PetShop();

@@ -36,8 +36,6 @@ namespace Project02.Models
 
             Console.WriteLine("Cat successfuly registered!");
 
-            Pet.GeneratePetJsonFile();
-
             Console.ReadKey();
 
             Console.Clear();
@@ -48,12 +46,17 @@ namespace Project02.Models
             base.DisplayPetList(option, PetList);
 
             //CatList = PetList.Where(p => p.Type!.Equals("Cat")).Select(p => p).ToList();
-            var catList = PetList.Where(p => p.Type!.Equals("Cat")).Select(p => p).ToList();
+            Pet.GeneratePetJsonFile();
+            var catList = PetList.Where(p => p.Type!.Equals("Cat")).Select(p => p.Name).ToList();
 
             foreach (var cat in catList)
             {
-                Console.WriteLine(cat.Name);
+                Console.WriteLine(cat);
             }
+
+            Console.ReadKey();
+            
+            Console.Clear();
 
         }
 

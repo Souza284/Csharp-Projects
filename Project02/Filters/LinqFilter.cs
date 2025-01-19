@@ -8,8 +8,11 @@ namespace Project02.Filters
 
         public static IEnumerable<Pet>? CatList {get; set;}
         public static IEnumerable<Pet>? DogList { get; set; }
-        public static void DisplayPetList(List<Pet> pets, int option)
+        /*public override void DisplayPetList( int option, List<Pet> pets)
         {
+
+            base.DisplayPetList(option, pets);
+
             CatList = pets.Where(p => p.Type!.Equals("Cat")).Select(p => p).ToList();
             DogList = pets.Where(p => p.Type!.Equals("Dog")).Select(p => p).ToList();
 
@@ -40,6 +43,6 @@ namespace Project02.Filters
                     break;
                 }
             }
-        }
+        }*/
     }
 }

@@ -39,6 +39,7 @@ namespace Project02.Models
         public virtual void DisplayPetList(int option, List<Pet> pets)
         {
             Console.Clear();
+            Console.WriteLine("List");
         }
 
     }

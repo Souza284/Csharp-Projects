@@ -11,7 +11,7 @@ var buffer = new byte[1024]; //1 Kbyte (KB)
 
 while (byteNumber != 0)
 {
-    byteNumber = fileFlow.Read(buffer, 0 , 1024);
+    byteNumber = fileFlow.Read(buffer, 0, 1024);
 
     WriteBuffer(buffer);
 

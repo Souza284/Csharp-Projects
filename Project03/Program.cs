@@ -7,7 +7,11 @@ partial class Program
 {
     static void Main(string[] args)
     {
-        var fileAddress = "Accounts.txt";
+
+        CreateFile();
+        CreateFileWithWriter();
+
+        /*var fileAddress = "Accounts.txt";
 
         using (var fileFlow = new FileStream(fileAddress, FileMode.Open))
         {
@@ -27,9 +31,9 @@ partial class Program
             {
                 var line = reader.ReadLine();
                 var currentAccount = ConvertStringToCurrentAccount(line!);
-                var message = $"Number: {currentAccount.Number} Agency: {currentAccount.Agency} Balance: {currentAccount.Balance} Client: {currentAccount.Holder.Name}"; 
+                var message = $"Number: {currentAccount.Number} Agency: {currentAccount.Agency} Balance: {currentAccount.Balance} Client: {currentAccount.Holder!.Name}"; 
 
-                Console.WriteLine(message);
+                //Console.WriteLine(message);
                 //Console.WriteLine(line);
             }
         }
@@ -61,5 +65,8 @@ partial class Program
         result.Holder = client;
 
         return result;
+    }*/
+
+        
     }
 }

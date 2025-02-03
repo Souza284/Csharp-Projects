@@ -8,8 +8,10 @@ partial class Program
     static void Main(string[] args)
     {
 
-        CreateFile();
-        CreateFileWithWriter();
+        //CreateFile();
+        //CreateFileWithWriter();
+
+        TestWrite();
 
         /*var fileAddress = "Accounts.txt";
 

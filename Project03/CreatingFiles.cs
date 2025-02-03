@@ -28,4 +28,20 @@ partial class Program
             writer.Write("456,65465,456.0,Pedro");
         }
     }
+
+    static void TestWrite()
+    {
+        var fileAddressPath = "test.txt";
+
+        using(var fileFlow = new FileStream(fileAddressPath, FileMode.Create))
+        using(var writer = new StreamWriter(fileFlow))
+        {
+            for (var i = 0; i < 1000000; i++)
+            {
+                writer.WriteLine("Line " + i);
+                writer.Flush();
+                Console.ReadLine();
+            }
+        }
+    }
 }

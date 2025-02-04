@@ -10,9 +10,11 @@ partial class Program
 
         //CreateFile();
         //CreateFileWithWriter();
-        BinaryWriter();
-        BinaryReader();
-        TestWrite();
+        //BinaryWriter();
+        //BinaryReader();
+        //TestWrite();
+
+        UsingStreamConsole();
 
         /*var fileAddress = "Accounts.txt";
 

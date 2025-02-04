@@ -13,3 +13,6 @@ C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\obj\Debug\net8.0\r
 C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\obj\Debug\net8.0\Project02.pdb
 C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\obj\Debug\net8.0\Project02.genruntimeconfig.cache
 C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\obj\Debug\net8.0\ref\Project02.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\obj\Debug\net8.0\Project02.csproj.AssemblyReference.cache
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\obj\Debug\net8.0\Project02.csproj.Up2Date

@@ -4,7 +4,6 @@ namespace Project02.Models
 {
     internal class Cat : Pet
     {
-        public IEnumerable<Pet>? CatList { get; set; }
         public Cat() { }
         public Cat(string name, string race, int age)
         {
@@ -44,9 +43,8 @@ namespace Project02.Models
         public override void DisplayPetList(int option, List<Pet> pets)
         {
             base.DisplayPetList(option, PetList);
-
-            //CatList = PetList.Where(p => p.Type!.Equals("Cat")).Select(p => p).ToList();
-            Pet.GeneratePetJsonFile();
+            
+            CreatePetJsonFile();
             var catList = PetList.Where(p => p.Type!.Equals("Cat")).Select(p => p.Name).ToList();
 
             foreach (var cat in catList)

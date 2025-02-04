@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Newtonsoft.Json;
 using Project02.Filters;
 using Project02.Models;
 
@@ -21,21 +22,18 @@ namespace Project02.Models
             PetList.Add(pet);
         }
 
-        public static void GeneratePetJsonFile()
+        public static void CreatePetJsonFile()
         {
-            var json = JsonSerializer.Serialize(new { petlist = PetList });
-            var fileName = "Pet List";
+            var fileAddress = @"C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\bin\Debug\net8.0\jsonFile\jsonText.json";
 
-            File.WriteAllText(fileName, json);
+            var json = JsonConvert.SerializeObject(PetList, Formatting.Indented);
 
-            //Console.WriteLine(fileName + ": " + Path.GetFullPath(fileName));
+            using(FileStream fileStream = new(fileAddress, FileMode.Create))
+            using(StreamWriter writer = new(fileStream))
+            {
+                writer.WriteLine(json);
+            }
         }
-
-        public static void ClearPetJsonFile()
-        {
-            //File.Delete(fileName, json)
-        }
-
         public virtual void DisplayPetList(int option, List<Pet> pets)
         {
             Console.Clear();

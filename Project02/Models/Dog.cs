@@ -43,8 +43,8 @@ namespace Project02.Models
         public override void DisplayPetList(int option, List<Pet> pets)
         {
             base.DisplayPetList(option, pets);
-
-            Pet.GeneratePetJsonFile();
+            
+            CreatePetJsonFile();
             var dogList = pets.Where(p => p.Type!.Equals("Dog")).Select(p => p.Name).ToList();
 
             foreach (var dog in dogList)

@@ -10,7 +10,8 @@ partial class Program
 
         //CreateFile();
         //CreateFileWithWriter();
-
+        BinaryWriter();
+        BinaryReader();
         TestWrite();
 
         /*var fileAddress = "Accounts.txt";

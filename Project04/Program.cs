@@ -1,7 +1,9 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 class Program
 {
@@ -20,25 +22,18 @@ class Program
 
         var deserializedFile = JsonConvert.DeserializeObject<Pokemon>(file);
 
-        /*foreach(var pokemon in deserializedFile.Result)
+        foreach(var pokemon in deserializedFile.Results)
         {
-            Console.WriteLine(pokemon => pokemon.Name);
-        }*/
-
-        //Console.Write(deserializedFile.Result);
+            Console.WriteLine(pokemon.Name);
+        }
     }
 }
 
 public class Pokemon
 {
     [JsonPropertyName("results")]
-    //public string Result { get; set; }
-    //public Pokemon[] Result { get; set; }
-    public Pokemon[] Result = new Pokemon[20];
-    //public Dictionary<Pokemon,string> Result = new();
-
-    [JsonPropertyName("count")]
-    public string? Count { get; set; }
-    [JsonPropertyName("name")]
+    public Pokemon[] Results{ get; set; }
+    public int Count { get; set; }
     public string? Name { get; set; }
+    public string? Next { get; set; }
 }

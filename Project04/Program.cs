@@ -22,7 +22,7 @@ class Program
 
         var deserializedFile = JsonConvert.DeserializeObject<Pokemon>(file);
 
-        foreach(var pokemon in deserializedFile.Results)
+        foreach(var pokemon in deserializedFile!.Results!)
         {
             Console.WriteLine(pokemon.Name);
         }
@@ -32,7 +32,7 @@ class Program
 public class Pokemon
 {
     [JsonPropertyName("results")]
-    public Pokemon[] Results{ get; set; }
+    public Pokemon[]? Results{ get; set; }
     public int Count { get; set; }
     public string? Name { get; set; }
     public string? Next { get; set; }

@@ -22,7 +22,7 @@ namespace Project02.Models
             PetList.Add(pet);
         }
 
-        public static void CreatePetJsonFile()
+        /*public static void CreatePetJsonFile()
         {
             var fileAddress = @"C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\bin\Debug\net8.0\jsonFile\jsonText.json";
 
@@ -32,6 +32,18 @@ namespace Project02.Models
             using(StreamWriter writer = new(fileStream))
             {
                 writer.WriteLine(json);
+            }
+        }*/
+
+        public static void CreatePetJsonFile()
+        {
+            var fileAddress = @"C:\Users\Pedro\Documents\MyProjects\Csharp-Projects\Project02\bin\Debug\net8.0\jsonFile\jsonPetText.json";
+
+            var json = JsonConvert.SerializeObject(PetList);
+
+            if (File.Exists(fileAddress) == false)
+            {
+                File.WriteAllText(fileAddress, json);
             }
         }
         public virtual void DisplayPetList(int option, List<Pet> pets)

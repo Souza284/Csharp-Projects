@@ -33,8 +33,6 @@ class Program
 
         var deserializedFile = JsonConvert.DeserializeObject<Pokemon>(file);
 
-        J
-
         foreach(var pokemon in deserializedFile!.Results!)
         {
             //Console.WriteLine(pokemon.Name);

@@ -20,11 +20,24 @@ class Program
 
         var file = File.ReadAllText(@"C:\Users\Pedro\Documents\JsonTests\test.json");
 
+        JObject _object = JObject.Parse(file);
+        string count = (string)_object["count"]!;
+        List<string> results = _object["results"]!.Select(o => (string?)o["url"]).ToList()!;
+
+        foreach(var result in results)
+        {
+            Console.WriteLine(result);
+        }
+
+        //Console.WriteLine(count);
+
         var deserializedFile = JsonConvert.DeserializeObject<Pokemon>(file);
+
+        J
 
         foreach(var pokemon in deserializedFile!.Results!)
         {
-            Console.WriteLine(pokemon.Name);
+            //Console.WriteLine(pokemon.Name);
         }
     }
 }

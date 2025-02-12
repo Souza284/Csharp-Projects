@@ -7,7 +7,7 @@ namespace Project04.Models
     internal class JsonAPI
     {
         private static string? File { get; set; }
-        public static async Task ExtractJsonFile(string jsonFile)
+        public static async Task ExtractJsonFile()
         {
             using (HttpClient client = new())
             {

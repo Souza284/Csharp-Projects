@@ -7,7 +7,7 @@ namespace Project04.Models
 {
     internal class Execute
     {
-        public static void DisplayMenu(Pokemon file)
+        public static void DisplayMenu()
         {
             Console.WriteLine("Welcome to Pokemon App!");
 
@@ -19,11 +19,11 @@ namespace Project04.Models
             switch (option)
             {
                 case 1:
-                {
-                    Console.Clear();
-                    //Pokemon.DisplayPokemonList();
-                    break;
-                }
+                    {
+                        Console.Clear();
+                        Pokemon.DisplayPokemonList(JsonAPI.DeserializedFile!);
+                        break;
+                    }
             }
         }
     }

@@ -26,6 +26,6 @@ foreach(var result in results)
 
 Console.WriteLine(count);*/
 
-//await JsonAPI.ExtractJsonFile();
+await JsonAPI.ExtractJsonFile();
 
-//Execute.DisplayMenu();
+Execute.DisplayMenu();

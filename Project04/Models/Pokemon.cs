@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using Newtonsoft.Json;
+using Project04.Models;
 
 internal class Pokemon
 {
@@ -19,6 +20,14 @@ internal class Pokemon
         foreach (var pokemonName in file.Results!)
         {
             Console.WriteLine(pokemonName.Name);
+        }
+
+        Console.WriteLine("Would you like to display more 20 pokemons? [yes/no]");
+        var answer = Console.ReadLine()!;
+
+        if (answer == "yes")
+        {
+            
         }
     }
 }

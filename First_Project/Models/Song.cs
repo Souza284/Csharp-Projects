@@ -3,10 +3,16 @@ namespace First_Project.Models
     internal class Song
     {
         public string? Name { get; set; }
+        public int Id { get; set; }
         public Band? Artist { get; }
         public int Duration { get; set; } //seconds
         public bool Avaiable { get; set; }
         public Genre? Genre { get; set; }
+
+        public Song(string name)
+        {
+            this.Name = name;
+        }
 
         public Song(string name, Band artist, int duration, Genre genre, bool avaiable)
         {
@@ -33,6 +39,17 @@ namespace First_Project.Models
             {
                 Console.WriteLine("Purchase the plane Plus+");
             }
+        }
+
+        public void DisplayProfile()
+        {
+            Console.WriteLine("Song: " + Name);
+        }
+
+        public override string ToString()
+        {
+            return $@"Id: {Id}
+                    Name: {Name}";
         }
     }
 }

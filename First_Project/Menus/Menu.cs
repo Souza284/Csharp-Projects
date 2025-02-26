@@ -4,7 +4,7 @@ namespace First_Project.Menus
 {
     internal class Menu
     {
-        public virtual void Execute(Dictionary<string, Band> Bands)
+        public virtual void Execute(Dictionary<string, Artist> songs)
         {
             Console.Clear();
         }   

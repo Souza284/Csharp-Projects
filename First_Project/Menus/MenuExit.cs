@@ -5,9 +5,9 @@ namespace First_Project.Menus
 {
     internal class MenuExit: Menu
     {
-        public override void Execute(Dictionary<string, Band> Bands)
+        public override void Execute(Dictionary<string, Artist> artists)
         {
-            base.Execute(Bands);;
+            base.Execute(artists);;
             Console.WriteLine("Thank you for using it!"); ;
         }
     }

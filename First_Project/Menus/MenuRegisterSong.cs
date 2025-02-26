@@ -22,6 +22,8 @@ namespace First_Project.Menus
                 Artist artist = artists[artistName];
                 artist.AddSong(new Song(songName));
                 Console.WriteLine($"The song {songName} from {artistName} was successfully registered!");
+                Console.WriteLine("Enter any key to go back to the menu");
+                Console.ReadKey();
                 Thread.Sleep(4000);
                 Console.Clear();
             }

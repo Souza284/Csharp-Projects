@@ -1,6 +1,21 @@
 ﻿// Screen Sound!
+using First_Project.Base;
 using First_Project.Menus;
 using First_Project.Models;
+using First_Project.Base;
+
+try
+{;
+    using var connection = new Connection().GetConnection();
+    connection.Open();
+    Console.WriteLine(connection.State);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
+return;
 
 //Dictionary<string, Band> Bands = new();
 Dictionary<string, Artist> Artists = new();
@@ -9,7 +24,7 @@ Dictionary<int, Menu> menus = new();
 menus.Add(1, new MenuRegisterArtist());
 menus.Add(2, new MenuRegisterSong());
 menus.Add(3, new MenuDisplayArtist());
-menus.Add(4, new MenuDisplaySongs());
+menus.Add(4, new MenuDisplaySongs());   
 menus.Add(0, new MenuExit());
 
 
